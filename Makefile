@@ -11,3 +11,9 @@ run-local:
 
 build:
 	go build -o ./bin/mqtt-notifications ./cmd/main.go
+
+install: build
+	mkdir -p ${HOME}/.mqtt-notifications/bin
+	cp ./bin/mqtt-notifications ${HOME}/.mqtt-notifications/bin/
+	echo "Binary installed to ${HOME}/.mqtt-notifications/bin/mqtt-notifications"
+	echo "Add this binary to the list of applications started at login"
