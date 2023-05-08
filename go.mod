@@ -3,9 +3,12 @@ module git.strawberryelk.internal/dblencowe/mqtt-notifications
 go 1.20
 
 require (
-	github.com/caarlos0/env/v8 v8.0.0 // indirect
-	github.com/eclipse/paho.mqtt.golang v1.4.2 // indirect
-	github.com/gen2brain/beeep v0.0.0-20230307103607-6e717729cb4f // indirect
+	github.com/caarlos0/env/v8 v8.0.0
+	github.com/eclipse/paho.mqtt.golang v1.4.2
+	github.com/gen2brain/beeep v0.0.0-20230307103607-6e717729cb4f
+)
+
+require (
 	github.com/go-toast/toast v0.0.0-20190211030409-01e6764cf0a4 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect

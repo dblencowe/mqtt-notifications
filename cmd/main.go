@@ -35,6 +35,7 @@ func main() {
 	if err != nil {
 		log.Fatal("cannot connect to mqtt server ", err)
 	}
+	defer client.Disconnect(0)
 
 	err = mqtt.Subscribe(client, cfg.BrokerTopic)
 	if err != nil {
